@@ -1,0 +1,8 @@
+RewriteEngine On
+
+RewriteRule ^(home)\/?$ index.php?pagina=$1 [NC]
+
+RewriteRule ^(404)\/?$ index.php?pagina=$1 [NC]
+
+IndexIgnore *
+ErrorDocument 404 /index.php?pagina=404

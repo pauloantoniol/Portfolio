@@ -1,0 +1,776 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    background:url(../imagens/Tec6.png); /*inserção da imagem de fundo em todo o site*/
+    color:#ced5f7; /*cor padrão para todas as fontes*/
+    font-family: "Open Sans", Helvetica, sans-serif, arial; /*definição da fonte geral incorporada do Google Fonts*/
+    font-size: 1.125em; /* 18px ÷ 16px = 1.125em tamanho da fonte*/
+    font-weight: 300; /*indica que a fonte está coonfigurada como Open Sans Light*/
+    line-height: 22px;/*altura da linha*/
+    text-align: left; /*alinhando o texto à esquerda*/
+    width:100%;
+}
+
+#navigations{
+    float: right;
+}
+
+.atendimento{
+    margin-top: 20px;
+}
+
+@media screen and (max-width:6000px){
+    .center{
+        margin: 0 auto; /*centralizando o conteúdo no navegador*/
+        max-width: 1200px; /*largura do layout*/
+        width:90%;
+    }
+    .center-conteudo{
+        margin: 0 auto; /*centralizando o conteúdo no navegador*/
+        max-width: 1200px; /*largura do layout*/
+        width:80%;
+    }
+
+    .center-footer{
+        margin: 0 auto; /*centralizando o conteúdo no navegador*/
+        max-width: 1200px; /*largura do layout*/
+        width:90%;
+    }
+
+    /*.clearfix usado para adicionar um espaço vazio antes e depois dos elementos
+      evitando que os floats se aglomerem.
+    */
+    .clearfix:before, .clearfix:after {
+        content: "";
+        display: table;
+    }
+    .clearfix:after {
+        clear: both;
+    }
+    .clearfix {
+        *zoom: 1;
+    }
+
+    /*fim do clearfix*/
+    img, picture, video, embed {
+        max-width: 100%; /*define a largura máxima em até 100%*/
+    }
+    h1{
+        color:#FFF;
+        font-size: 3.333em; /*60 ÷ 18 = 3.333em*/
+        letter-spacing: -3px; /*espaçamento entre as letras*/
+        line-height: 60px;
+    }
+    h2{
+        font-size: 2.888em; /*32 ÷ 18 = 1.777em*/
+        font-weight: bolder;
+        letter-spacing: -2px; /*espaçamento entre as letras*/
+        line-height: 38px;
+        text-align: center;
+    }
+    h3{
+        font-size: 2.0em; /*32 ÷ 18 = 1.777em*/
+        font-weight: bolder;
+        letter-spacing: -2px; /*espaçamento entre as letras*/
+        line-height: 38px;
+        text-align: left;
+        margin: 0 0 0 0;
+    }
+    h4{
+        font-size: 1.4em; /*32 ÷ 18 = 1.777em*/
+        font-weight: bold;
+        letter-spacing: -2px; /*espaçamento entre as letras*/
+        line-height: 38px;
+        text-align: center;
+        margin: 20px 0 20px 0;
+    }
+    h5{
+        font-size: 1em; /*32 ÷ 18 = 1.777em*/
+        letter-spacing: -1px; /*espaçamento entre as letras*/
+        line-height: 22px;
+    }
+    a, a:link, a:visited{
+        color:#5799FF; /*cor dos links*/
+        font-weight:400; /*modifica a força da fonte para semi-bold*/
+        text-decoration:none; /*retira o sublinhado dos links*/
+    }
+    a:hover{
+        color:#FFF;
+    }
+
+    .main-box{
+        width: 100%;
+    }
+
+    footer{
+        min-height:35px;
+        width:100%;
+        padding: 12px 0 12px 0;
+        border-top: 3px solid #bfc5e6;
+    }
+
+    .fundoescuro{
+  		position: fixed;
+  		left: 0px;
+  	  top: 0px;
+  		width: 100%;
+  		height: 100%;
+  		background: repeat;
+  		background-image: url("/component/imagens/Main.CSS.bgblur.png");
+  		z-index: 999;
+      display:none;
+      opacity: 0.1;
+  	}
+
+    /*========================
+       logotipo
+    ==========================*/
+    header{
+        height:90px;
+        width:100%;
+        border-bottom: 3px solid #bfc5e6;
+        box-sizing: content-box;
+    }
+
+    header h1 span{
+        background:url(../imagens/logo.png) no-repeat;
+        display:block;
+        float:left;
+        height:60px;
+        text-indent:-9999;
+        max-width: 270px;
+        width:270px;
+    }
+
+    header menu{
+        display:none;
+    }
+
+	/*========================
+        TELEFONE
+    ==========================*/
+
+    address{
+      width: 485px;
+      margin: 61px 0 0 0;
+      left: 1%;
+      position: absolute;
+    }
+
+    address p{
+    	text-align: justify;
+		font-size: 0.9em;
+		font-weight: bolder;
+		line-height: 30px;
+		font-style: normal;
+		color: #FFFC00;
+		padding: 0 0 0 5px;
+    }
+
+
+  /*
+  ====================================
+  .menu-horizontal - menu de navega��o
+  ====================================
+  */
+  .menu-horizontal{
+      float:left; /*posiciona menu à direita*/
+      text-align:right; /*alinha os links à direita*/
+      max-width:680px;
+      min-height: 60px;
+      font-size: 0.7em;
+  }
+  .menu-horizontal ul{
+      list-style-type:none; /*retira os marcadores da lista*/
+      padding: 0;
+  }
+  .menu-horizontal li {
+      display: inline; /*deixa o menu na horizontal*/
+      float: left;
+      padding: 0;
+  }
+
+	.menu-horizontal ul li a{
+		padding: 17px 10px 17px 10px;
+	}
+
+	.menu-horizontal ul li:hover, .menu-horizontal ul li:active{
+		transition:all 100ms linear;
+		padding: 17px 0;
+		background: #5799FF;
+		border-radius: 5px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+	}
+
+
+	.menu-horizontal ul li:hover a, .menu-horizontal ul li:active a{
+		transition:all 100ms linear;
+		color:#fff;
+		padding: 0 10px;
+	}
+
+	.menu-horizontal a:link, .menu-horizontal a:visited{
+		 color:#bfc5e6;
+		 font-size: 1.222em;
+		 font-weight: 600;
+		 letter-spacing: -1px;
+		 line-height: 26px;
+		 display:inline-block;
+	}
+
+	.menu-horizontal li.ativo a{
+		color: #fff;
+
+	}
+
+	.menu-horizontal li.ativo{
+		background: #5799FF;
+		padding: 0.1px 0;
+		border-radius: 5px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+	}
+
+	.menu-horizontal li.transparent{
+		background-color: transparent;
+	}
+
+
+	.celular{
+	   width: 565px;
+  }
+
+	/*
+	=============
+	Conteudo
+	=============
+	*/
+
+	.content{
+		background: rgba(12, 17, 47, 0.95);
+		min-height: 595px;
+		border-radius: 5px
+	}
+
+	article{
+		margin: 0 auto;
+		width: 80%;
+		padding: 30px 0 10px 0;
+	}
+
+	.separacao{
+		border-bottom: 2px solid #bfc5e6;
+		width: 100%;
+		margin: 25px 0 25px 0;
+	}
+
+	.separacao-mini{
+		border-bottom:1px solid #bfc5e6;
+		width: 100%;
+		margin: 6px 0 6px 0;
+	}
+
+	.textos{
+		width: 90%;
+		margin: 0 auto 40px auto;
+	}
+
+	.textos p{
+		text-align: justify;
+		margin: 5px 0 0 0;
+		text-indent: 50px;
+		font-size: 1.1em;
+		font-weight: bolder;
+		line-height: 30px;
+
+	}
+
+	.textos ol{
+		text-align: justify;
+		margin: 25px 0 0 0;
+		font-size: 1.1em;
+		font-weight: bolder;
+		line-height: 30px;
+		text-decoration: none;
+	}
+
+  .textos-li{
+      width: 100%;
+  }
+
+	.box-infG{
+		width: 100%;
+		margin: 0 auto 30px auto;
+	}
+
+	.box-infG li{
+		list-style-type: decimal;
+		font-weight: bolder;
+		font-size: 1.25em;
+		margin: 30px 0 0 0;
+		line-height: 35px;
+	}
+
+	.box-infG ul li{
+		list-style-type: decimal;
+		font-weight: normal;
+		font-size: 1.1em;
+		line-height: 35px;
+        list-style-position: inside;
+	}
+
+  .box-infG label:not(.seta-cima){
+    margin: 0 20px 0 0;
+  }
+
+	.box-infP{
+		width: 46.7%;
+		float:left;
+		margin: 0 0 30px 0;
+	}
+
+	.textos .box-infP p{
+		text-align: justify;
+		margin: 15px 0 0 6px;
+		text-indent: 0px;
+		font-size: 0.999em;
+		font-weight: bolder;
+		letter-spacing: -1px;
+	}
+
+	.separacao-vertical{
+		height: 200px;
+		float: left;
+		border-left:1px solid #bfc5e6;
+		margin: 0 25px 0 25px;
+	}
+
+	.back-top{
+		font-size: 0.6em;
+		font-style: normal;
+		cursor: pointer;
+		color: #5799FF;
+    width: 80px;
+    height: 40px;
+    position: inherit;
+	}
+	.seta-cima{
+		border: 10px solid transparent;
+		border-bottom-color: #5799FF;
+		margin:0 0 0 2px;
+		cursor: pointer;
+		z-index: 0;
+    font-size: 0em;
+    top: -10px;
+    position: relative;
+	}
+
+	.inputs_txt{
+		height: 22px;
+		line-height: 20px;
+		margin: 5px;
+		border: 1px solid #ccc;
+		padding: 0 5px;
+		font-weight: bold;
+    font-size: 0.8em;
+	}
+
+  #OndeEsta{
+    width: 100%;
+    margin: 10px 0 30px 0;
+    font-size: 0.85em;
+  }
+
+  #OndeEsta label{
+    margin: 0 10px 0 0;
+  }
+
+  #OndeEsta label a{
+		cursor: pointer
+	}
+
+  #OndeEsta label:nth-child(3) a{
+    cursor: auto;
+		text-decoration: none;
+    color: #fff;
+	}
+
+  #OndeEsta label:nth-child(3) a:hover{
+		text-decoration: none;
+    color: #fff;
+	}
+
+  .SetaDireita {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    border: 8px solid transparent;
+    border-left: 8px solid #5799FF;
+    border-right: 0px solid;
+  }
+
+	/*IMAGENS*/
+	.Img_Orion{
+		width: 100%;
+		margin: 20px 0 30px 0;
+		border: 1px solid #FFF;
+	}
+
+	.Img_Icarus{
+		width: 100%;
+		margin: 20px 0 30px 0;
+		border: 1px solid #FFF;
+	}
+
+	.Img_Empresa{
+		width: 100%;
+		margin: 20px 0 30px 0;
+		border: 1px solid #FFF;
+	}
+	/*
+	=============
+	RODAP�
+	=============
+	*/
+
+	footer div{
+		text-align: center;
+
+	}
+
+	footer div span{
+		margin: 7px 0 0 0;
+	}
+}
+
+/*
+=========================
+Media Screen - Responsive
+=========================
+*/
+
+/*
+=======
+TELA 1
+=======
+*/
+@media screen and (max-width:1366px){ /*TELA NORMAL, COM UM PEQUENO AJUSTE NA FONTE */
+  	address{
+      width: 439px;
+      margin: 61px 0 0 0;
+      left: 1%;
+  	}
+    .separacao-vertical{
+        height: 200px;
+        float: left;
+        border-left:1px solid #bfc5e6;
+        margin: 0 18px 0 18px;
+    }
+    .textos .box-infP p{
+        font-size: 0.95em;
+    }
+}
+
+/*
+=======
+TELA 2
+=======
+*/
+@media screen and (max-width:1097px){ /*TELA COM JUSTE NA FONTE E NO TAMANHO DO MENU, COM O CENTER PRINCIPAL AJUSTADO PARA SE ADEQUAR A TELA*/
+    .celular{
+        width: 406px;
+    }
+    .center-conteudo{
+        width: 95%;
+    }
+    h2{
+        font-size: 2.5em;
+    }
+    .separacao{
+        border-bottom: 1px solid #bfc5e6;
+    }
+    .Img_Orion{
+        /*min-height: 319px;*/
+    }
+    .Img_Icarus{
+        /*min-height: 319px;*/
+    }
+    .Img_Empresa{
+        /*min-height: 319px;*/
+    }
+}
+
+/*
+=======
+TELA 3
+=======
+*/
+@media screen and (max-width:900px){
+    .center-conteudo{
+        width: 100%;
+    }
+    article{
+        width: 90%;
+    }
+    header h1 span{
+        background:url(../imagens/logo_pequeno2.png) no-repeat;
+        max-width: 200px;
+        width:200px;
+    }
+}
+
+/*
+=======
+TELA 4
+=======
+*/
+@media screen and (max-width:840px){
+    /*address{
+    	position: relative;
+    	float: left;
+    	margin: 5px 0 4px -11%;
+    	right: 4%;
+    }*/
+    .celular{
+        margin: 0 0 0 -10%;
+    }
+    .textos .box-infP p{
+        font-size: 0.9em;
+    }
+    header h1 span{
+      background:url(../imagens/logo_pequeno1.png) no-repeat;
+      width: 100px;
+      max-width: 100px;
+    }
+}
+
+/*
+=======
+TELA 5
+=======
+*/
+@media screen and (max-width:740px){
+    address{
+      width: 100%;
+      margin: 61px 0 0 0;
+      left: 0;
+    }
+    address p{
+      text-align: center;
+    }
+    .celular{
+        margin: 0 0 0 -11%;
+    }
+    h2{
+        font-size: 2em;
+    }
+    h3{
+        font-size: 1.5em;
+    }
+    .separacao{
+        margin: 15px 0 15px 0;
+    }
+    .textos .box-infP p{
+        margin: 15px 0 0 0px;
+    }
+    .separacao-vertical{
+        display: none;
+    }
+    .box-infP{
+        width: 60%;
+        margin: 0 auto 0 auto;
+        float: none;
+    }
+    .back-top{
+        font-size: 0.65em;
+        font-size: 0.72em;
+    }
+    .seta-cima{
+        margin: 9px 0 0 7px;
+    }
+    header menu{
+        display:block;
+    }
+    header h1 span{
+        background:url(../imagens/logo.png) no-repeat;
+        width: 270px;
+        max-width: 270px;
+        margin: 0 0 0 45px;
+    }
+    .menu-horizontal{
+        display:none;
+    }
+}
+
+/*
+=======
+TELA 6
+=======
+*/
+@media screen and (max-width:640px){
+    .celular{
+        margin: 0 0 0 -14%;
+    }
+    .desktop{
+        margin: 0 0 0 -27%;
+    }
+    .center{
+        width: 55%;
+    }
+    footer{
+        padding: 25px 0 25px 0;
+    }
+    .textos p{
+        font-size: 0.9em;
+    }
+    .textos ol{
+        font-size: 0.9em;
+        margin: 15px 0 0 0;
+    }
+    .box-infG li{
+        font-size: 1.1em;
+        margin: 15px 0 0 0;
+    }
+    .box-infG ul li{
+        font-size: 0.9em;
+    }
+    article{
+        width: 94%;
+    }
+
+}
+
+/*
+=======
+TELA 7
+=======
+*/
+@media screen and (max-width:580px){
+    .celular{
+        margin: 0 0 0 -9%;
+    }
+}
+
+/*
+=======
+TELA 8
+=======
+*/
+@media screen and (max-width:531px){
+    address{
+      left: 1%;
+    }
+    address p{
+		font-size: 0.75em;
+		padding: 0 0 0 0;
+    }
+
+    #navigations{
+        margin-top: 10px;
+        float: none;
+    }
+
+    h3{
+        font-size: 1.2em;
+    }
+    h4{
+        font-size: 1.15em;
+    }
+    h5{
+        font-size: 0.9em;
+    }
+    .box-infP{
+        width: 95%;
+    }
+    .box-infG{
+        width: 95%;
+    }
+    .back-top{
+        font-size: 0.72em;
+    }
+    .seta-cima {
+        margin: 7px 0 0 7px;
+    }
+    #OndeEsta{
+      width: 100%;
+      margin: 10px 0 30px 0;
+      font-size: 0.7em;
+    }
+    .SetaDireita {
+      border: 5px solid transparent;
+      border-left: 5px solid #5799FF;
+      border-right: 0px solid;
+    }
+}
+
+/*
+=======
+TELA 9
+=======
+*/
+@media screen and (max-width:405px){
+    /*address{
+    	position: relative;
+		float: right;
+		margin: 2px 0 0 0;
+		right: 0;
+		width: 320px;
+    }*/
+    address p{
+		font-size: 0.67em;
+    }
+    .textos p{
+        font-size: 0.88em;
+    }
+    .textos ol{
+        font-size: 0.88em;
+    }
+    .box-infG li{
+        font-size: 1.0em;
+    }
+    .box-infG ul li{
+        font-size: 0.88em;
+    }
+    .box-infG{
+        width: 100%;
+    }
+    .box-infP{
+        width: 100%;
+    }
+    header h1 span{
+        background:url(../imagens/logo_pequeno2.png) no-repeat;
+        width: 270px;
+        max-width: 270px;
+        margin: 0 0 0 50px;
+    }
+}
+
+/*
+========
+TELA 10
+========
+*/
+@media screen and (max-width:320px){
+    header menu{
+        display:block;
+    }
+    address{
+		width: 313px;
+    }
+    address p{
+		font-size: 0.65em;
+    }
+}
+
+.logopequeno3{
+    background:url(../imagens/logo_pequeno3.png) no-repeat;
+    width: 219px;
+    height: 56px;
+}
+
+.bgazuleR{background:rgba(54, 67, 138, 0.8);}
