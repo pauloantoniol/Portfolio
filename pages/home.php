@@ -8,13 +8,25 @@
 			</span>
 			<button class="trigger">hi!</button>
 			<ul class="menu__items">
-				<li title="Um pouco sobre mim!"><a href="#"><i class="fa fa-fw fa-user"></i></a></li>
+				<li title="Um pouco sobre mim!">
+					<a href="#">
+						<i class="fa fa-fw fa-user"></i>
+					</a>
+				</li>
 				<li title="Meus trabalhos"><a href="trabalhos"><i class="fa fa-fw fa-file-image-o"></i></a></li>
-				<li title="Minha história academica"><a href="#"><i class="fa fa-fw fa-graduation-cap"></i></a></li>
+				<li title="Minha história acadêmica"><a href="#"><i class="fa fa-fw fa-graduation-cap"></i></a></li>
 				<li title="Entre em contato!"><a href="#"><i class="fa fa-fw fa-envelope"></i></a></li>
 				<li class='hide'></li>
-				<li title="Siga-me no Behance"><a href="https://www.behance.net/pauloantoniol" target="_blank"><i class="fa fa-fw fa-behance"></i></a></li>
-				<li title="Siga-me no GitHub"><a href="https://github.com/pauloantoniol" target="_blank"><i class="fa fa-fw fa-github"></i></a></li>
+				<li title="Siga-me no Behance">
+					<a href="https://www.behance.net/pauloantoniol" target="_blank">
+						<i class="fa fa-fw fa-behance"></i>
+					</a>
+				</li>
+				<li title="Siga-me no GitHub">
+					<a href="https://github.com/pauloantoniol" target="_blank">
+						<i class="fa fa-fw fa-github"></i>
+					</a>
+				</li>
 				<li title="Siga-me no Facebook"><a href="https://www.facebook.com/pauloantoniolfc" target="_blank"><i class="fa fa-fw fa-facebook"></i></a></li>
 			</ul>
 		</nav>
@@ -31,7 +43,7 @@
 			$('#menu').tooltipster('show');
 
 			$('#menu').hover(function(){
-				$(this).tooltipster('hide');
+				$('#menu').tooltipster('hide');
 			});
 
 			if ($(window).width() > 640) {
@@ -90,6 +102,14 @@
 					touchDevices: false,
 					onlyOne: true
 				});
+
+				$('.menu__items li:eq(0)').hover(function(){$('.menu__items li:eq(0)').tooltipster('show');});
+				$('.menu__items li:eq(1)').hover(function(){$('.menu__items li:eq(1)').tooltipster('show');});
+				$('.menu__items li:eq(2)').hover(function(){$('.menu__items li:eq(2)').tooltipster('show');});
+				$('.menu__items li:eq(3)').hover(function(){$('.menu__items li:eq(3)').tooltipster('show');});
+				$('.menu__items li:eq(5)').hover(function(){$('.menu__items li:eq(5)').tooltipster('show');});
+				$('.menu__items li:eq(6)').hover(function(){$('.menu__items li:eq(6)').tooltipster('show');});
+				$('.menu__items li:eq(7)').hover(function(){$('.menu__items li:eq(7)').tooltipster('show');});
 			}
 			else{
 				$('.menu__items li:eq(0)').tooltipster({

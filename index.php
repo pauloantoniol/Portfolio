@@ -24,13 +24,13 @@
 			}
 		?>
 
-		<div class="main"> <!-- ESSA CLASSE SÓ É USADA PARA O MENU EM CELULARES -->
+		<div class="main">
 			<?php  include ('pages/'.$pagina.'.php'); ?>
 		</div>
 		<?php
 			if($menu_others == true){
 		?>
-		<script type="text/javascript" src="component/sweets/menu-responsivo/main3.js"></script>
+			<script type="text/javascript" src="component/sweets/menu-responsivo/main3.js"></script>
 		<?php
 			}
 		?>

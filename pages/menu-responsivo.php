@@ -26,7 +26,7 @@
 		<ul class='float-right'>
 			<li><a href="#">Prazer Paulo</a></li>
 			<li><a href="trabalhos">Trabalhos</a></li>
-			<li><a href="#">Hitória</a></li>
+			<li><a href="#">História</a></li>
 			<li><a href="#">Contato</a></li>
 			<li><a href="https://github.com/pauloantoniol" target="_blank" class='icone'>
 				<i class="fa fa-fw fa-github"></i>

@@ -157,7 +157,7 @@
 }
 
 .close-galeria {
-	position: absolute;
+	position: fixed;
 	z-index: 1002;
 	top: 0;
 	right: 10px;

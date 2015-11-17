@@ -15,7 +15,7 @@
 						<figure class="effect-sarah">
 							<img src="component/image/4.jpg" alt="img04"/>
 							<figcaption>
-								<h2>TRABALHOS <span>FINAL</span></h2>
+								<h2>TRABALHO <span>FINAL</span></h2>
 							</figcaption>
 						</figure>
 						<figure class="effect-sarah">
