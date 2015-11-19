@@ -161,11 +161,11 @@
 	z-index: 1002;
 	top: 0;
 	right: 10px;
-	font-size: 1.6em;
+	font-size: 2.7em;
 	color: #2ECC71;
 	cursor: pointer;
 	pointer-events: none;
-	padding: 1em;
+	padding: 0.4em;
 	opacity: 0;
 	-webkit-transition: opacity 0.3s;
 	transition: opacity 0.3s;

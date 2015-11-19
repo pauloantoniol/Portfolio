@@ -142,6 +142,8 @@
 				if( ev.propertyName.indexOf( 'transform' ) === -1 ) return false;
 				this.removeEventListener( transEndEventName, onEndTransitionFn );
 				loadContent();
+				$('.content-wrap').css('overflow-y','hidden');
+
 			};
 			self.placeholder.addEventListener( transEndEventName, onEndTransitionFn );
 		};
@@ -175,6 +177,7 @@
 			self.placeholder.parentNode.removeChild( self.placeholder );
 			// show grid item again
 			classie.removeClass( currentItem, 'active' );
+			$('.content-wrap').css('overflow-y','scroll');
 		};
 		this.placeholder.addEventListener( transEndEventName, onEndPlaceholderTransFn );
 	};

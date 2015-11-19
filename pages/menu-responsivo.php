@@ -1,11 +1,10 @@
 <div class="menu-wrap">
 	<nav class="menu-responsivo">
 		<div class="icon-list">
-			<a href="home"><i class="fa fa-fw fa-home"></i><span>Home</span></a>
 			<a href="#"><i class="fa fa-fw fa-user"></i><span>Prazer Paulo</span></a>
 			<a href="trabalhos"><i class="fa fa-fw fa-file-image-o"></i><span>Trabalhos</span></a>
 			<a href="#"><i class="fa fa-fw fa-graduation-cap"></i><span>História</span></a>
-			<a href="#"><i class="fa fa-fw fa-envelope"></i><span>Contato</span></a>
+			<a href="contato"><i class="fa fa-fw fa-envelope"></i><span>Contato</span></a>
 			<a href="https://www.facebook.com/pauloantoniolfc" target="_blank"><i class="fa fa-fw fa-facebook"></i><span>Facebook</span></a>
 			<a href="https://github.com/pauloantoniol" target="_blank"><i class="fa fa-fw fa-github"></i><span>GitHub</span></a>
 			<a href="https://www.behance.net/pauloantoniol" target="_blank"><i class="fa fa-fw fa-behance"></i><span>Behance</span></a>
@@ -27,7 +26,7 @@
 			<li><a href="#">Prazer Paulo</a></li>
 			<li><a href="trabalhos">Trabalhos</a></li>
 			<li><a href="#">História</a></li>
-			<li><a href="#">Contato</a></li>
+			<li><a href="contato">Contato</a></li>
 			<li><a href="https://github.com/pauloantoniol" target="_blank" class='icone'>
 				<i class="fa fa-fw fa-github"></i>
 			</a></li>
@@ -40,8 +39,10 @@
 		</ul>
 	</nav>
 
-	<blockquote>
-		<h4 class='w260 float-right' id='logo3'><a href="home">Paulo Antonio</a></h4>
-		<button class="menu-button" id="open-button"></button>
-	</blockquote>
+	<section>
+		<div class='content'>
+			<h4 class='w260 float-right' id='logo3'><a href="home">Paulo Antonio</a></h4>
+			<button class="menu-button" id="open-button"></button>
+		</div>
+	</section>
 </menu>

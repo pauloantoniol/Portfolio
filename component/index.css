@@ -12,8 +12,7 @@
 .clearfix:after { clear: both; }
 .clearfix {*zoom: 1;}
 
-body{color:#fff; background: #2ECC71;width:100%; float:none; font-family:Tahoma, Arial, Helvetica, sans-serif;}
-
+body{color:#fff; background: #2ECC71;width:100%; float:none; font-family:Tahoma, Arial, Helvetica, sans-serif; overflow-x: hidden;}
 @media screen and (max-width:6000px){
 	body .main, body footer{margin: 1em auto 0 auto; max-width: 1200px; width:90%;}
 
@@ -39,8 +38,8 @@ body{color:#fff; background: #2ECC71;width:100%; float:none; font-family:Tahoma,
 	menu nav #logo{margin: 0.1em 0 0 0.5em;color:#fff;position: fixed;}
 	menu nav #logo2{display: none;}
 
-	menu blockquote{display: none;position: fixed; background: #272c2c; width: 100%; top: 0;right: 0;left: 0; height: 3em;z-index: 1;}
-	menu blockquote h4{margin: 0.1em 0 0 0;color:#fff;}
+	menu section{display: none;position: fixed; background: #272c2c; width: 100%; top: 0;right: 0;left: 0; height: 3em;z-index: 1;}
+	menu section h4{margin: 0.1em 0 0 0;color:#fff;}
 
 	.pontos{width: 100%;height: 100%;opacity: 0.2;position: fixed;top: 0;left: 0;z-index: -1;padding: 0;margin: 0;background-image:url('image/pontos.png');-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;background-position: center center;}
 
@@ -48,14 +47,14 @@ body{color:#fff; background: #2ECC71;width:100%; float:none; font-family:Tahoma,
     a:hover,{color: #fff;outline: none;}
 
 	.container{ position: relative;width: 100%;background:#fff;}
-	.conteudo{margin: 0 auto;padding: 2em 2em;text-align: center;}
+	.conteudo{ margin: 0 auto 4em auto;padding: 2em 2em;text-align: center;}
 	.conteudo h1{color:#2ECC71; font-size: 3em; letter-spacing: 0.1em;line-height: 1.4em;text-transform: uppercase; margin: 0 0 20px 0;}
 	.nada{width: 200px;height: 1000px;}
 }
 
 
 
-@media screen and (max-width: 50em) {
+@media screen and (max-width: 52.5em) {
 	menu nav ul{font-size:1em;}
 	menu nav li:hover{height: 3em;}
 	menu nav li a{line-height:3em; height:3em;}
@@ -64,7 +63,11 @@ body{color:#fff; background: #2ECC71;width:100%; float:none; font-family:Tahoma,
 }
 
 @media screen and (max-width: 40em) {
-	body .main, body footer{margin: 0 auto 0 auto;width: 99%;}
+	html, body, .container, .content-wrap { overflow: hidden;width: 100%;height: 100%;}
+
+	.content-wrap {overflow-y:scroll;-webkit-overflow-scrolling: touch;-webkit-transition: -webkit-transform 0.3s;transition: transform 0.3s;}
+
+	body .main{margin: 0 auto 0 auto;width: 99%; height: 100%;}
 
 	.conteudo h1{font-size: 2em;line-height: 1.5em;}
 
@@ -72,8 +75,13 @@ body{color:#fff; background: #2ECC71;width:100%; float:none; font-family:Tahoma,
 
 	menu{text-align: center;}
 	menu nav{display: none;}
-	menu blockquote{display: inline;}
+	menu section{display: inline;}
 
+}
+
+@media screen and (max-width: 20em) {
+	menu section h4{font-size:1.8em; text-align: right; margin: 0.2em 0.4em 0 0;}
+	menu section li a{line-height:3em; height:3em;}
 }
 
 .hide{display: none;}

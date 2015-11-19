@@ -15,7 +15,7 @@
 				</li>
 				<li title="Meus trabalhos"><a href="trabalhos"><i class="fa fa-fw fa-file-image-o"></i></a></li>
 				<li title="Minha história acadêmica"><a href="#"><i class="fa fa-fw fa-graduation-cap"></i></a></li>
-				<li title="Entre em contato!"><a href="#"><i class="fa fa-fw fa-envelope"></i></a></li>
+				<li title="Entre em contato!"><a href="contato"><i class="fa fa-fw fa-envelope"></i></a></li>
 				<li class='hide'></li>
 				<li title="Siga-me no Behance">
 					<a href="https://www.behance.net/pauloantoniol" target="_blank">
