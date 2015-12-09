@@ -1,33 +1,48 @@
-	<link rel="stylesheet" type="text/css" href="component/sweets/menu/css/circlemenu.css" />
+	<link rel="stylesheet" type="text/css" href="/component/sweets/menu/css/circlemenu.css" />
 	<div class="container-menu">
 		<nav id="menu" class="menu" title='Click e descubra mais!'>
-			<span class="morph-shape" data-morph-active="M251,150c0,93.5-29.203,143-101,143S49,243.5,49,150C49,52.5,78.203,7,150,7S251,51.5,251,150z">
+			<span class="morph-shape" 
+				data-morph-active="M251,150c0,93.5-29.203,143-101,143S49,243.5,49,150C49,52.5,78.203,7,150,7S251,51.5,251,150z">
+				
 				<svg width="100%" height="100%" viewBox="0 0 300 300" preserveAspectRatio="none">
 					<path d="M281,150c0,71.797-59.203,131-131,131S19,221.797,19,150S78.203,19,150,19S281,78.203,281,150z"/>
 				</svg>
 			</span>
+			
 			<button class="trigger">hi!</button>
+			
 			<ul class="menu__items">
 				<li title="Um pouco sobre mim!">
 					<a href="#">
 						<i class="fa fa-fw fa-user"></i>
 					</a>
 				</li>
-				<li title="Meus trabalhos"><a href="trabalhos"><i class="fa fa-fw fa-file-image-o"></i></a></li>
+				
+				<li title="Meus trabalhos"><a href="/trabalhos"><i class="fa fa-fw fa-file-image-o"></i></a></li>
+				
 				<li title="Minha história acadêmica"><a href="#"><i class="fa fa-fw fa-graduation-cap"></i></a></li>
-				<li title="Entre em contato!"><a href="contato"><i class="fa fa-fw fa-envelope"></i></a></li>
+				
+				<li title="Entre em contato!"><a href="/contato"><i class="fa fa-fw fa-envelope"></i></a></li>
+				
 				<li class='hide'></li>
+				
 				<li title="Siga-me no Behance">
 					<a href="https://www.behance.net/pauloantoniol" target="_blank">
 						<i class="fa fa-fw fa-behance"></i>
 					</a>
 				</li>
+				
 				<li title="Siga-me no GitHub">
 					<a href="https://github.com/pauloantoniol" target="_blank">
 						<i class="fa fa-fw fa-github"></i>
 					</a>
 				</li>
-				<li title="Siga-me no Facebook"><a href="https://www.facebook.com/pauloantoniolfc" target="_blank"><i class="fa fa-fw fa-facebook"></i></a></li>
+				
+				<li title="Siga-me no Facebook">
+					<a href="https://www.facebook.com/pauloantoniolfc" target="_blank">
+						<i class="fa fa-fw fa-facebook"></i>
+					</a>
+				</li>
 			</ul>
 		</nav>
 	</div>

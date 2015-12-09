@@ -21,8 +21,7 @@
 	$pagina = isset($_GET['pagina']) ? $_GET['pagina'] : 'home';
 	$pagina = file_exists('pages/'.$pagina.'.php') ? $pagina : '404';
 
-	$url_inteira = "";
-	$url = "";
+	$url_inteira = $url = "";
 	if(!empty($_GET['url'])){
 		$url_inteira = substr($_GET['url'], -1) == '/' ? substr($_GET['url'],0,-1) : $_GET['url'];
 		$url = explode('/', $url_inteira);
@@ -39,6 +38,9 @@
 			$menu_home = "";
 			$cor = "fundo-branco";
 		break;
+		case 'contato':
+			$nome_pagina = 'Portfolio - Contato';
+		break;
 		case 'trabalhos':
 			$nome_pagina = 'Portfolio - Trabalhos';
 		break;
@@ -54,34 +56,34 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
 		<!-- PRINCIPAIS CSS -->
-		<link rel="stylesheet" href="component/sweets/jquery/jquery-ui.css" />
-		<link rel="stylesheet" href="component/index.css" type="text/css" />
+		<link rel="stylesheet" href="/component/sweets/jquery/jquery-ui.css" />
+		<link rel="stylesheet" href="/component/index.css" type="text/css" />
 
 		<!-- PRINCIPAIS JS -->
-		<script type="text/javascript" src='component/sweets/jquery/jquery.min.js'></script>
-		<script type="text/javascript" src='component/sweets/jquery/jquery-ui.js'></script>
-		<script type="text/javascript" src='component/functions.js'></script>
+		<script type="text/javascript" src='/component/sweets/jquery/jquery.min.js'></script>
+		<script type="text/javascript" src='/component/sweets/jquery/jquery-ui.js'></script>
+		<script type="text/javascript" src='/component/functions.js'></script>
 
 		<!-- MENU CSS/JS -->
-		<link rel="stylesheet" type="text/css" href="component/sweets/menu/css/font-awesome.min.css" />
-		<script src="component/sweets/menu/snap.svg-min.js"></script>
-		<script src="component/sweets/menu/classie.js"></script>
+		<link rel="stylesheet" type="text/css" href="/component/sweets/menu/css/font-awesome.min.css" />
+		<script src="/component/sweets/menu/snap.svg-min.js"></script>
+		<script src="/component/sweets/menu/classie.js"></script>
 
 		<!-- TOOLTIP CSS/JS -->
-		<link rel="stylesheet" type="text/css" href="component/sweets/tooltip/tooltipster.css" />
-		<script type="text/javascript" src="component/sweets/tooltip/jquery.tooltipster.js"></script>
+		<link rel="stylesheet" type="text/css" href="/component/sweets/tooltip/tooltipster.css" />
+		<script type="text/javascript" src="/component/sweets/tooltip/jquery.tooltipster.js"></script>
 
 		<!-- BACKGROUND CSS/JS -->
-		<link rel="stylesheet" type="text/css" href="component/sweets/background/component.css" />
-		<script type="text/javascript" src="component/sweets/background/modernizr.custom.js"></script>
+		<link rel="stylesheet" type="text/css" href="/component/sweets/background/component.css" />
+		<script type="text/javascript" src="/component/sweets/background/modernizr.custom.js"></script>
 
 		<!-- MENU-RESPONSIVO CSS/JS -->
-		<link rel="stylesheet" type="text/css" href="component/sweets/menu-responsivo/menu_elastic.css" />
-		<script src="component/sweets/menu-responsivo/classie.js"></script>
+		<link rel="stylesheet" type="text/css" href="/component/sweets/menu-responsivo/menu_elastic.css" />
+		<script src="/component/sweets/menu-responsivo/classie.js"></script>
 
 		<!-- GALERIA CSS/JS -->
-		<link rel="stylesheet" type="text/css" href="component/sweets/galeria/galeria.css" />
-		<link rel="stylesheet" type="text/css" href="component/sweets/galeria/set1.css" />
+		<link rel="stylesheet" type="text/css" href="/component/sweets/galeria/galeria.css" />
+		<link rel="stylesheet" type="text/css" href="/component/sweets/galeria/set1.css" />
 
 		<!--[if lt IE 7]>
 		<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js"></script>
@@ -96,6 +98,6 @@
   			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 
-		<link rel='SHORTCUT icon' href='../imagens/Version.Layout.Icarus.png'/>
+<!-- 		<link rel='SHORTCUT icon' href='../imagens/Version.Layout.Icarus.png'/> -->
 
 		<title><?= $nome_pagina ?></title>
