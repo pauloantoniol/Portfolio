@@ -30,7 +30,7 @@
 		<?php
 			if($menu_others == true){
 		?>
-			<script type="text/javascript" src="component/sweets/menu-responsivo/main3.js"></script>
+			<script type="text/javascript" src="/component/sweets/menu-responsivo/main3.js"></script>
 		<?php
 			}
 		?>

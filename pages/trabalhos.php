@@ -33,7 +33,7 @@
 			</div><!-- /grid-wrap -->
 			<div class="galeria">
 				<div>
-					<h2>Finn o Humano!</h2>
+					<h2 class="dummy-title">Finn o Humano!</h2>
 					<div class="dummy-img"><img src="/component/image/1.jpg" alt="img01"/></div>
 					<p class="dummy-text">
 						The only people for me are the mad ones, the ones who are mad to live,
@@ -50,6 +50,7 @@
 					</p>
 				</div>
 				<div>
+					<h2 class="dummy-title">Trabalho Final</h2>
 					<div class="dummy-img"><img src="/component/image/4.jpg" alt="img04"/></div>
 					<p class="dummy-text">
 						The only people for me are the mad ones, the ones who are mad to live, 
@@ -67,6 +68,7 @@
 					</p>
 				</div>
 				<div>
+					<h2 class="dummy-title">Pintura Digital</h2>
 					<div class="dummy-img"><img src="/component/image/6.jpg" alt="img06"/></div>
 					<p class="dummy-text">
 						The only people for me are the mad ones, the ones who are mad to live, 
@@ -84,6 +86,7 @@
 					</p>
 				</div>
 				<div>
+					<h2 class="dummy-title">Quatro Estações</h2>
 					<div class="dummy-img"><img src="/component/image/9.jpg" alt="img09"/></div>
 					<p class="dummy-text">
 						The only people for me are the mad ones, the ones who are mad to live, 

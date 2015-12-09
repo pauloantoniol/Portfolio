@@ -185,7 +185,8 @@
 /* Dummy galeria */
 
 .dummy-img,
-.dummy-text {
+.dummy-text,
+.dummy-title{
 	max-width: 600px;
 	width: 90%;
 	opacity: 0;
@@ -206,7 +207,8 @@
 }
 
 .galeria > div.show .dummy-img,
-.galeria > div.show .dummy-text {
+.galeria > div.show .dummy-text,
+.galeria > div.show .dummy-title{
 	opacity: 1;
 }
 
@@ -250,6 +252,18 @@ p.dummy-text:nth-child(3) {
 	padding-bottom: 100px;
 }
 
+h2.dummy-title{
+	text-align: center;
+	margin: 30px auto 0 auto;
+	padding: 10px 0 0 0;
+	color: #5B5A5F;
+	font-size: 3.2em;
+	font-family: 'Blokk', Arial, serif;
+	letter-spacing: 0.1em;
+    line-height: 1.4em;
+    text-transform: uppercase;
+}
+
 /* Simple fallback */
 /* if any of these are not supported, a simple fallback will be shown */
 .no-pointerevents .galeria,
@@ -289,6 +303,11 @@ p.dummy-text:nth-child(3) {
 	.grid .placeholder {
 		width: 240px;
 		height: 212px;
+	}
+	
+	h2.dummy-title{
+		font-size: 2.5em;
+		margin-top: 60px;
 	}
 
 }
