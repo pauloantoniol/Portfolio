@@ -5,30 +5,38 @@
 		<section class="grid3d vertical" id="grid3d">
 			<div class="grid-wrap">
 				<div class="grid">
-					<figure class="effect-sarah">
-						<img src="component/image/1.jpg" alt="img01"/>
-						<figcaption>
-							<h2>FINN <span>O humano</span></h2>
-						</figcaption>
+					<figure class="effect-sarah" >
+						<a href="/trabalhos/finn" >
+							<img src="component/image/1.jpg" alt="img01"/>
+							<figcaption>
+								<h2>FINN <span>O humano</span></h2>
+							</figcaption>
+						</a>
 					</figure>
-					<figure class="effect-sarah">
-						<img src="component/image/4.jpg" alt="img04"/>
-						<figcaption>
-							<h2>TRABALHO <span>FINAL</span></h2>
-						</figcaption>
-					</figure>
-					<figure class="effect-sarah">
-						<img src="component/image/6.jpg" alt="img06"/>
-						<figcaption>
-							<h2>PINTURA <span>DIGITAL</span></h2>
-						</figcaption>
-					</figure>
-					<figure class="effect-sarah">
-						<img src="component/image/9.jpg" alt="img09"/>
-						<figcaption>
-							<h2>QUATRO <span>ESTAÇÕES</span></h2>
-						</figcaption>
-					</figure>
+					<a onclick="mudalink('final');">
+						<figure class="effect-sarah" >
+							<img src="component/image/4.jpg" alt="img04"/>
+							<figcaption>
+								<h2>TRABALHO <span>FINAL</span></h2>
+							</figcaption>
+						</figure>
+					</a>
+					<a onclick="mudalink('pintura');">
+						<figure class="effect-sarah" >
+							<img src="component/image/6.jpg" alt="img06"/>
+							<figcaption>
+								<h2>PINTURA <span>DIGITAL</span></h2>
+							</figcaption>
+						</figure>
+					</a>
+					<a onclick="mudalink('4estacoes');">
+						<figure class="effect-sarah" >
+							<img src="component/image/9.jpg" alt="img09"/>
+							<figcaption>
+								<h2>QUATRO <span>ESTAÇÕES</span></h2>
+							</figcaption>
+						</figure>
+					</a>
 				</div>
 			</div><!-- /grid-wrap -->
 			<div class="galeria">
@@ -65,6 +73,7 @@
 		</section>
 	</div>
 </div>
+<input type='hidden' value='<?= $url ?>' />
 <script src="component/sweets/galeria/modernizr2.custom.js"></script>
 <script src="component/sweets/galeria/grid3d.js"></script>
 <script src="component/sweets/galeria/helper.js"></script>
@@ -76,6 +85,8 @@
 	}else{
 		$('figure figcaption').css( "color","#fff");
 	}
+
+
 	[].slice.call( document.querySelectorAll('a[href="#"') ).forEach( function(el) {
 		el.addEventListener( 'click', function(ev) {
 			ev.preventDefault();

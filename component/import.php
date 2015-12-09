@@ -17,6 +17,17 @@
 	$pagina = isset($_GET['pagina']) ? $_GET['pagina'] : 'home';
 	$pagina = file_exists('pages/'.$pagina.'.php') ? $pagina : '404';
 
+	global $pagina;
+	$pagina = isset($_GET['pagina']) ? $_GET['pagina'] : 'home';
+	$pagina = file_exists('pages/'.$pagina.'.php') ? $pagina : '404';
+
+	$url_inteira = "";
+	$url = "";
+	if(!empty($_GET['url'])){
+		$url_inteira = substr($_GET['url'], -1) == '/' ? substr($_GET['url'],0,-1) : $_GET['url'];
+		$url = explode('/', $url_inteira);
+	}
+
 	$menu_home = "hide";
 	$menu_others = true;
 	$cor = "fundo-verde";
@@ -41,7 +52,6 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
 
 		<!-- PRINCIPAIS CSS -->
 		<link rel="stylesheet" href="component/sweets/jquery/jquery-ui.css" />

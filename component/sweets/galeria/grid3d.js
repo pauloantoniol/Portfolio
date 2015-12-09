@@ -64,6 +64,7 @@
 				$("figcaption").show();
 				$("menu").show();
 			},600);
+			window.history.pushState('', '', '/trabalhos');
 		} );
 
 		if( this.support ) {
@@ -142,7 +143,10 @@
 				if( ev.propertyName.indexOf( 'transform' ) === -1 ) return false;
 				this.removeEventListener( transEndEventName, onEndTransitionFn );
 				loadContent();
-				$('.content-wrap').css('overflow-y','hidden');
+				setTimeout(function(){$('.close-galeria').addClass("open");},1000);
+				if ($(window).width() < 640) {
+					$('html, body, .container, .content-wrap').css('overflow','hidden');
+				}
 
 			};
 			self.placeholder.addEventListener( transEndEventName, onEndTransitionFn );
@@ -177,7 +181,11 @@
 			self.placeholder.parentNode.removeChild( self.placeholder );
 			// show grid item again
 			classie.removeClass( currentItem, 'active' );
-			$('.content-wrap').css('overflow-y','scroll');
+			$('.close-galeria').removeClass("open");
+
+			if ($(window).width() < 640) {
+				$('.content-wrap').css('overflow-y','scroll');
+			}
 		};
 		this.placeholder.addEventListener( transEndEventName, onEndPlaceholderTransFn );
 	};

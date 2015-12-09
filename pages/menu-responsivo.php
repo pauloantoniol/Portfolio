@@ -39,10 +39,8 @@
 		</ul>
 	</nav>
 
-	<section>
-		<div class='content'>
-			<h4 class='w260 float-right' id='logo3'><a href="home">Paulo Antonio</a></h4>
-			<button class="menu-button" id="open-button"></button>
-		</div>
+	<section class='content'>
+		<h4 class='w260 float-right' id='logo3'><a href="home">Paulo Antonio</a></h4>
+		<button class="menu-button" id="open-button"></button>
 	</section>
 </menu>
