@@ -70,12 +70,12 @@ body{color:#fff; background: #2ECC71;width:100%; float:none; font-family:Tahoma,
 @media screen and (max-width: 52.5em) {
 	menu nav ul{font-size:1em;}
 	menu nav li:hover{height: 3em;}
-	menu nav li a{line-height:3em; height:3em;}
-	menu nav #logo{display: none}
-	menu nav #logo2{display: inline;margin: 0.1em 0 0 0.5em;}
+	menu nav li a{line-height:3em; height:3em; padding:0 7px;}
+/* 	menu nav #logo{display: none} */
+/* 	menu nav #logo2{display: inline;margin: 0.1em 0 0 0.5em;} */
 }
 
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 43em) {
 	
 	html, body, .container, .content-wrap { overflow: hidden;width: 100%;height: 100%;}
 

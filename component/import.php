@@ -84,6 +84,10 @@
 		<!-- GALERIA CSS/JS -->
 		<link rel="stylesheet" type="text/css" href="/component/sweets/galeria/galeria.css" />
 		<link rel="stylesheet" type="text/css" href="/component/sweets/galeria/set1.css" />
+		
+		<!-- ALERT CSS/JS -->
+		<link rel="stylesheet" type="text/css" href="/component/sweets/alert/sweetalert.css" />
+		<script type="text/javascript" src="/component/sweets/alert/sweetalert.js"></script>
 
 		<!--[if lt IE 7]>
 		<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js"></script>

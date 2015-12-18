@@ -58,25 +58,83 @@ function empty(mixed_var) {
 //########################################################
 //########################################################
 
+
+
 $(document).ready(function(){
+    
+    //########################################################
+    //QUANDO CLICAR NO TRABALHO URL É MUDADA AUTOMATICAMENTE
+    //########################################################
     $(".grid-wrap .grid figure").on("click", function(){
         var zelda = $(this).attr('trabalho');
         setTimeout(function(){window.history.pushState('', '', "/trabalhos/"+zelda+"/");},600);
     });
     
+    //########################################################
+    //SE O INPUT ESTIVER PREENCHIDO TENTA ABRIR O TRABALHO QUE ELE ESTÁ TENTANDO ACESSAR
+    //########################################################   
     if(!empty($("#link_trabalho").val())){
         $(".grid-wrap .grid figure[trabalho="+$("#link_trabalho").val()+"]").click();
     }
 });
 
 
-$('a').each(function() {
-   var a = new RegExp('/' + window.location.host + '/');
-   if(!a.test(this.href)) {
-       $(this).click(function(event) {
-           event.preventDefault();
-           event.stopPropagation();
-           window.open(this.href, '_blank');
-       });
-   }
+
+
+//########################################################
+//########################################################
+                //FIMM FUNÇÕES PAGE TRABALHO
+//########################################################
+//########################################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//########################################################
+//########################################################
+                //FUNÇÕES DOS MENUS
+//########################################################
+//########################################################
+
+
+$(document).ready(function(){
+    $("a.contato").click(function(){
+        //########################################################
+        //COPIA EMAIL E AVISA QUE FOI COPIADO
+        //########################################################
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val($(this).attr('email')).select();
+        document.execCommand("copy");
+        $temp.remove();
+        swal({
+                title: "E-mail copiado! \n use CTRL+V!",
+                type: "success",
+                showConfirmButton: false,
+                timer: 2000,
+            }
+        );
+    }); 
 });
+
+
+
+//########################################################
+//########################################################
+                //FIM FUNÇÕES DOS MENUS
+//########################################################
+//########################################################

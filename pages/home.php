@@ -13,18 +13,22 @@
 			
 			<ul class="menu__items">
 				<li title="Um pouco sobre mim!">
-					<a href="#">
+					<a href="/eu">
 						<i class="fa fa-fw fa-user"></i>
 					</a>
 				</li>
 				
-				<li title="Meus trabalhos"><a href="/trabalhos"><i class="fa fa-fw fa-file-image-o"></i></a></li>
+				<li title="Meus trabalhos">
+					<a href="/trabalhos">
+						<i class="fa fa-fw fa-file-image-o"></i>
+					</a>
+				</li>
 				
-				<li title="Minha história acadêmica"><a href="#"><i class="fa fa-fw fa-graduation-cap"></i></a></li>
-				
-				<li title="Entre em contato!"><a href="/contato"><i class="fa fa-fw fa-envelope"></i></a></li>
-				
-				<li class='hide'></li>
+				<li title="Pegue meu e-mail!">
+					<a class='contato' email='pauloantoniolfc@gmail.com'>
+						<i class="fa fa-fw fa-envelope"></i>
+					</a>
+				</li>
 				
 				<li title="Siga-me no Behance">
 					<a href="https://www.behance.net/pauloantoniol" target="_blank">
@@ -32,9 +36,17 @@
 					</a>
 				</li>
 				
+				<li class='hide'></li>
+				
 				<li title="Siga-me no GitHub">
 					<a href="https://github.com/pauloantoniol" target="_blank">
 						<i class="fa fa-fw fa-github"></i>
+					</a>
+				</li>
+				
+				<li title="Siga-me no Twitter">
+					<a href="https://twitter.com/pauloantoniol" target="_blank">
+						<i class="fa fa-fw fa-twitter"></i>
 					</a>
 				</li>
 				

@@ -2,24 +2,26 @@
 	<nav class="menu-responsivo">
 		<div class="icon-list">
 			
-			<a href="#"><i class="fa fa-fw fa-user"></i><span>Prazer Paulo</span></a>
+			<a href="/eu"><i class="fa fa-fw fa-user"></i><span>Prazer Paulo</span></a>
 			
 			<a href="/trabalhos"><i class="fa fa-fw fa-file-image-o"></i><span>Trabalhos</span></a>
 			
-			<a href="#"><i class="fa fa-fw fa-graduation-cap"></i><span>História</span></a>
-			
-			<a href="/contato"><i class="fa fa-fw fa-envelope"></i><span>Contato</span></a>
+			<a class='contato'><i class="fa fa-fw fa-envelope"></i><span>Pegue em e-mail</span></a>
 			
 			<a href="https://www.facebook.com/pauloantoniolfc" target="_blank">
 				<i class="fa fa-fw fa-facebook"></i><span>Facebook</span>
 			</a>
 			
-			<a href="https://github.com/pauloantoniol" target="_blank">
-				<i class="fa fa-fw fa-github"></i><span>GitHub</span>
+			<a href="https://twitter.com/pauloantoniol" target="_blank">
+				<i class="fa fa-fw fa-twitter"></i><span>Twitter</span>
 			</a>
 			
 			<a href="https://www.behance.net/pauloantoniol" target="_blank">
 				<i class="fa fa-fw fa-behance"></i><span>Behance</span>
+			</a>
+			
+			<a href="https://github.com/pauloantoniol" target="_blank">
+				<i class="fa fa-fw fa-github"></i><span>GitHub</span>
 			</a>
 		</div>
 	</nav>
@@ -43,24 +45,28 @@
 		
 		<ul class='float-right'>
 			
-			<li><a href="#">Prazer Paulo</a></li>
+			<li><a href="/eu">Prazer Paulo</a></li>
 			
 			<li><a href="/trabalhos">Trabalhos</a></li>
 			
-			<li><a href="#">História</a></li>
-			
-			<li><a href="/contato">Contato</a></li>
-			
-			<li><a href="https://github.com/pauloantoniol" target="_blank" class='icone'>
-				<i class="fa fa-fw fa-github"></i>
+			<li title="Pegue Meu E-mail" ><a class='contato icone'>
+				<i class="fa fa-fw fa-envelope"></i>
 			</a></li>
 			
-			<li><a href="https://www.facebook.com/pauloantoniolfc" target="_blank" class='icone'>
+			<li title="Siga-me no Facebook" ><a href="https://www.facebook.com/pauloantoniolfc" target="_blank" class='icone'>
 				<i class="fa fa-fw fa-facebook"></i>
 			</a></li>
 			
-			<li><a href="https://www.behance.net/pauloantoniol" target="_blank" class='icone'>
+			<li title="Siga-me no Twitter" ><a href="https://twitter.com/pauloantoniol" target="_blank" class='icone'>
+				<i class="fa fa-fw fa-twitter"></i>
+			</a></li>
+			
+			<li title="Siga-me no Behance" ><a href="https://www.behance.net/pauloantoniol" target="_blank" class='icone'>
 				<i class="fa fa-fw fa-behance"></i>
+			</a></li>
+			
+			<li title="Siga-me no GitHub" ><a href="https://github.com/pauloantoniol" target="_blank" class='icone'>
+				<i class="fa fa-fw fa-github"></i>
 			</a></li>
 		</ul>
 	</nav>
@@ -70,3 +76,12 @@
 		<button class="menu-button" id="open-button"></button>
 	</section>
 </menu>
+
+<script>
+		$(document).ready(function() {
+			$('nav ul li').tooltipster({
+				position: 'bottom',
+				onlyOne: true
+			});
+		});
+</script>
