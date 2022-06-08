@@ -2,7 +2,7 @@
 	session_start();
 	date_default_timezone_set("America/Sao_Paulo");
 
-	//VERIFICA SE É MOBILE OU DESKTOP
+	//VERIFICA SE ï¿½ MOBILE OU DESKTOP 
 	$mobileOuPc = "";
 	if (strpos($_SERVER['HTTP_USER_AGENT'],"iPhone") || strpos($_SERVER['HTTP_USER_AGENT'],"iPad") ||
 	strpos($_SERVER['HTTP_USER_AGENT'],"Android") || strpos($_SERVER['HTTP_USER_AGENT'],"webOS") ||
@@ -45,7 +45,7 @@
 			$nome_pagina = 'Portfolio - Trabalhos';
 		break;
 		case '404':
-			$nome_pagina = 'Página não Encontrada - Pennacorp';
+			$nome_pagina = 'Pï¿½gina nï¿½o Encontrada - Pennacorp';
 		break;
 	}
 ?>
